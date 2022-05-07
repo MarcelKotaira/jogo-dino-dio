@@ -1,0 +1,21 @@
+:root {
+    --branco: #fff;
+	--vermelho: #e50914;
+	--cinza: #acacac;
+    --escuro: rgb(32, 33, 36);
+    --fundo-personagem: rgb(172, 172, 172);
+}
+
+h1 {
+	font-size: 40px;
+    text-align: center;
+    color: #acacac;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: var(--escuro);
+}

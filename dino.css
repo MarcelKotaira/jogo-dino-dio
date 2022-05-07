@@ -1,0 +1,103 @@
+:root {
+    --branco: #fff;
+	--vermelho: #e50914;
+	--cinza: #acacac;
+    --fundo-personagem: rgb(172, 172, 172);
+}
+
+#Game {
+    width: 600px;
+    height: 150px;
+	position: relative;
+    overflow: hidden;
+}
+
+#background {
+    width: 600px;
+    height: 26px;
+    background-image: url(./src/ground.png);
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+
+#start {
+    position: absolute;
+	font-size: 24px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+    width: min-content;
+    background-color: var(--cinza);
+    border-radius: 15px;
+    border-color: var(--fundo-personagem);
+}
+#start:hover {
+    background-color: rgb(200, 200, 200);
+    border-radius: 15px;
+    border-color: rgb(200, 200, 200);
+    cursor: pointer;
+}
+
+.score {
+    position: absolute;
+	font-size: 20px;
+    text-align: right;
+    color: #acacac;
+    width: max-content;
+}
+
+#dino {
+    width: 44px;
+    height: 47px;
+	position: absolute;
+    background-image: url(./src/dino.png);
+    background-size: cover;
+}
+
+.run {
+    animation: anima 0.2s steps(2) infinite;
+}
+
+.dead {
+    background-position: -176px;
+}
+
+#restart {
+    overflow: hidden;
+    width: 36px;
+    height: 32px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-image: url(./src/restart.png);
+    border: none;
+    border-radius: 5px;
+}
+#restart:hover {
+    cursor: pointer;
+    border: 2px rgb(200, 200, 200);
+}
+
+.cactur-slim {
+    position: absolute;
+    background-image: url(./src/cactosFinos.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    overflow: hidden;
+}
+
+@keyframes anima {
+    from {
+        background-position: -88px;
+    }
+    to {
+        background-position: -176px;
+    }
+}
